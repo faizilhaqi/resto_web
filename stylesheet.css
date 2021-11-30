@@ -12,6 +12,27 @@ main{
 	padding-top: 200px;
 	padding-bottom:100px;
 }
+.top-wrapper:hover .container h1{
+	animation-name:anim-h1;
+	animation-duration: 1.5s;
+	position:relative;
+}
+.top-wrapper:hover .container p{
+	animation-name:anim-p;
+	animation-duration: 1.5s;
+	position:relative;
+}
+@keyframes anim-h1{
+	0% 	{top:-50px;opacity: 0.0;}
+	50%{top:0px;opacity:1.0;}
+}
+
+@keyframes anim-p{
+	0% 	{top:-50px;opacity: 0.0;}
+	50% 	{top:-50px;opacity: 0.0;}
+	100%{top:0px;opacity:1.0;}
+}
+
 .container{
 	width:100%;
 	padding-left:15px;
@@ -114,13 +135,15 @@ main{
 	padding-bottom: 20px; 
 }
 .text-container h2{
-	font-size: 100px;
+	font-size: 80px;
 	font-family:"Lucida Handwriting";
 	color:rgba(205, 97, 51,1.0);
+	text-align: center;
 }
 .text-container p{
 	color: rgba(75, 75, 75,0.8);
 	font-size: 50px;
 	font-family:"Franklin Gothic Medium";
 	font-weight:normal;
+	text-align: left;
 }
